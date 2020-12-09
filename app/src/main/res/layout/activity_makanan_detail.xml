@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".ui.MakananDetailActivity">
+
+    <ImageView
+        android:id="@+id/region_img"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:src="@drawable/ic_baseline_food_bank_24"></ImageView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp">
+
+        <ImageView
+            android:id="@+id/makananImg"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:src="@drawable/ic_baseline_access_time_24" />
+
+        <TextView
+            android:id="@+id/makananWaktu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingStart="10dp"
+            android:text=" menit" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingStart="10dp"
+        android:text="Bahan:"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/makananBahan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingStart="10dp"
+        android:paddingBottom="10dp"
+        android:text=" menit" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingStart="10dp"
+        android:text="Cara:"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/makananCaraMasak"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingStart="10dp"
+        android:text=" -" />
+
+
+</LinearLayout>

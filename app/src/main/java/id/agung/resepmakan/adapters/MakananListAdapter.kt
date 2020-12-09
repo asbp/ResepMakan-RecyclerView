@@ -1,11 +1,13 @@
 package id.agung.resepmakan.adapters
 
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import id.agung.resepmakan.databinding.ItemMakananListBinding
 import id.agung.resepmakan.models.MakananListModel
+import id.agung.resepmakan.ui.MakananDetailActivity
 
 class MakananListAdapter(private val list: List<MakananListModel>) :
         RecyclerView.Adapter<MakananListAdapter.MyHolder>() {
@@ -26,10 +28,16 @@ class MakananListAdapter(private val list: List<MakananListModel>) :
             RecyclerView.ViewHolder(itemBinding.root) {
         fun bind(item: MakananListModel) {
             Glide.with(itemView.context)
-                    .load(item.image)
-                    .into(itemBinding.makananImg);
+                .load(item.image)
+                .into(itemBinding.makananImg);
 
             itemBinding.makananTitle.text = item.title;
+
+            itemBinding.root.setOnClickListener {
+                val intent = Intent(itemView.context, MakananDetailActivity::class.java)
+                intent.putExtra("food", item)
+                itemView.context.startActivity(intent)
+            }
 
         }
     }
