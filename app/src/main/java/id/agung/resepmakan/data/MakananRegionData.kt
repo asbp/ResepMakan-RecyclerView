@@ -125,7 +125,7 @@ object MakananRegionData {
         )
 
         list.add(MakananRegion("Makanan Indonesia", R.drawable.ic_calorie, gson.toJson(makananIndo)))
-        list.add(MakananRegion("Minuman Indonesia", R.drawable.ic_calorie, gson.toJson(makananLuar)))
+        list.add(MakananRegion("Minuman Indonesia", R.drawable.ic_calorie, gson.toJson(minumanIndo)))
         list.add(MakananRegion("Makanan Luar Negeri", R.drawable.ic_calorie, gson.toJson(makananLuar)))
 
         return list;
