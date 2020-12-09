@@ -40,6 +40,10 @@ class MakananListActivity : AppCompatActivity() {
 
         title = "Daftar Makanan"
 
+        val actionbar = supportActionBar;
+
+        actionbar!!.setDisplayHomeAsUpEnabled(true)
+
         val view = binding.root;
         setContentView(view);
     }
