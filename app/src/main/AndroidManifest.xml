@@ -13,6 +13,9 @@
         android:theme="@style/Theme.ResepMakan">
 
         <activity
+            android:name=".ui.MakananListActivity"
+            android:label="@string/title_activity_makanan_list"></activity>
+        <activity
             android:name=".ui.HomeActivity"
             android:label="@string/title_activity_home">
             <intent-filter>
